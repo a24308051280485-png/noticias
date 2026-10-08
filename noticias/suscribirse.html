@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Noticias 44 - Suscribirse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline-block;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .campo {
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #003366;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="44.jpg" alt="Logo Noticias 44" class="logo">
+        <h1>Noticias 44</h1>
+        <p>Noticias Del Dia</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio / Noticias</a> |
+        <a href="suscribirse.html">Suscribirse</a>
+    </nav>
+
+    <main>
+        <h2>Formulario de Suscripcion</h2>
+        <p>Llena tus datos para suscribirte a nuestro periodico de noticias:</p>
+
+        <form action="" method="post">
+
+            <input type="hidden" name="origen" value="pagina_suscribirse">
+
+            <div class="campo">
+                Ingresa tu nombre completo: <br>
+                <input type="text" name="nombre" size="30">
+            </div>
+
+            <div class="campo">
+                Ingresa tu usuario: <br>
+                <input type="text" name="usuario"><br><br>
+                Ingresa tu contrasena (maximo 5 caracteres): <br>
+                <input type="password" name="pass" maxlength="5">
+            </div>
+
+            <div class="campo">
+                Ingresa tu correo electronico: <br>
+                <input type="email" name="correo">
+            </div>
+
+            <div class="campo">
+                Selecciona tus temas de interes: <br>
+                <input type="checkbox" name="tema1"> Ciencia <br>
+                <input type="checkbox" name="tema2"> Tecnologia <br>
+                <input type="checkbox" name="tema3"> Deportes <br>
+            </div>
+
+            <div class="campo">
+                Selecciona tu nivel de estudios: <br>
+                <input type="radio" name="estudios" value="1"> Secundaria <br>
+                <input type="radio" name="estudios" value="2"> Preparatoria <br>
+                <input type="radio" name="estudios" value="3"> Universidad <br>
+            </div>
+
+            <div class="campo">
+                Selecciona tu pais: <br>
+                <select name="pais">
+                    <option value="1">Mexico</option>
+                    <option value="2">Espana</option>
+                    <option value="3">Colombia</option>
+                    <option value="4">Argentina</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                Fecha de nacimiento: <br>
+                <input type="date" name="fecha_nacimiento">
+            </div>
+
+            <div class="campo">
+                <button type="submit">Enviar Suscripcion</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p> 2026 Noticias 44 | Arreola Hurtado Brissa Araceli</p>
+    </footer>
+
+</body>
+</html>
